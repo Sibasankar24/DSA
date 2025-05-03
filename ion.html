@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Data Structures and Their Uses</h1>
+    </header>
+        <h1>Welcome to Linear Data Structures</h1>
+        <p>Click the link below to go to Non-Linear Data Structures:</p>
+        <a href="DS2.html" class="button">Non-Linear Data Structures</a>
+        <p>Click the link below to go to Hash-Based Data Structures:</p>
+        <a href="DS3.html" class="button">Hash-Based Data Structures</a>
+    <main>
+        <div class="data-structure">
+            <h2>Array</h2>
+            <p>An array is a collection of elements, identified by an index or key.Collection of elements stored at contiguous memory locations, accessible via indices.
+            </p> Use: Efficient for accessing elements using an index, such as in storing a list of items.</p>
+            <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+
+            <h2>Linked List</h2>
+            <p>Description: A sequence of nodes, where each node points to the next, forming a chain.
+
+            Example Use: Useful for dynamic memory allocation or implementing stacks and queues.</p>
+            <label for="linkedlist-type">Choose Linked List Type:</label>
+            <select id="linkedlist-type" onchange="showLinkedListExample()">
+                <option value="singly"> SinglyLinked List</option>
+                <option value="doubly">Doubly Linked List</option>
+                <option value="circular">Circular Linked List</option>
+            </select>
+        </select>
+        <button onclick="showExample('linkedlist')">Show Example</button>
+        <pre id="linkedlist-example" class="example"></pre>
+
+            <h2>Stack</h2>
+            <p>A stack is a LIFO (Last In, First Out) data structure.
+                Description: A Last In, First Out (LIFO) data structure. Only the top element is accessible.
+                Example Use: Backtracking problems like undo functionality in text editors.
+            </p>
+            <label for="stack-type">Choose Stack Type:</label>
+            <select id="stack" onchange="showStackExample()">
+                <option value="simple"> Simple Stack </option>
+                <option value="arraybased">Array-Based Stack</option>
+                <option value="list-based">Linked List-Based Stack</option>
+                <option value="fixed">Fixed-Size Stack</option>
+                <option value="circular">Circular Stack</option>
+
+            </select>
+            <button onclick="showExample('stack')">Show Example</button>
+            <pre id="stack-example" class="example"></pre>
+
+            <h2>Queue</h2>
+            <p>A queue is a FIFO (First In, First Out) data structure.
+                Description: A First In, First Out (FIFO) data structure. New elements are added at the rear and removed from the front.
+                Example Use: Task scheduling in operating systems.
+            </p>
+            <label for="LinkedList-type">Choose Queue Type:</label>
+            <select id="LinkedList-type" onchange="showQueueExample()">
+                <option value="Singly"> SinglyLinked List</option>
+                <option value="Doubly">Doubly Linked List</option>
+                <option value="Circular">Circular Linked List</option>
+            </select>
+            <button onclick="showExample('queue')">Show Example</button>
+            <pre id="queue-example" class="example"></pre>
+
+            <h2>Deque (Double-Ended Queue)</h2>
+            <p>Description: A generalized queue that allows insertion and deletion at both ends.
+
+            Example Use: Managing sliding windows for real-time data processing..
+            </p>
+            <label for="LinkedList-type">Choose Deque Type:</label>
+            <select id="LinkedList-type" onchange="showDequeExample()">
+                <option value="Singly"> SinglyLinked List</option>
+                <option value="Doubly">Doubly Linked List</option>
+                <option value="Circular">Circular Linked List</option>
+            </select>
+            <button onclick="showExample('queue')">Show Example</button>
+            <pre id="queue-example" class="example"></pre>
+        </div>      
+    </main>
+    <script src="script1.js"></script>
+</body>
+</html>

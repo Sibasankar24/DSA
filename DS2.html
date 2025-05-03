@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Structures</title>
+        <link rel="stylesheet" href="styles1.css">
+    </head>
+
+    <body>
+        <header><h1>Data Structures and Their Uses</h1></header>
+            <h1>Welcome to Non-Linear Data Structures</h1>
+            <p>Click the link below to go to Linear Data Structures:</p>
+            <a href="ion.html" class="button">Linear Data Structures</a>
+            <p>Click the link below to go to Hash-Based Data Structures:</p>
+            <a href="DS3.html" class="button">Hash-Based Data Structures</a>
+        <div class="data-structure">
+            <h2>Tree</h2>
+            <p>Description: A hierarchical data structure consisting of nodes, with one root node and child nodes.
+
+                Example Use: Representing hierarchical relationships like organization charts or file systems.</p>
+            <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+            <h2>Binary Tree:</h2><p>Description: A tree where each node has at most two children.
+
+                Example Use: Used in binary search algorithms and expression trees.</p>
+            <h2>Binary Search Tree (BST):</h2><p>Description: A binary tree where the left child contains elements smaller than the parent, and the right child contains elements larger.
+
+                Example Use: Fast searching, insertion, and deletion operations.</p>
+                <label for="array-type">Choose Array Type:</label>
+                <select>
+                    <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+                </select>
+            <h2>Heap:</h2><P>Description: A binary tree with a special property: the parent node is either greater than (Max-Heap) or less than (Min-Heap) its children.
+
+                Example Use: Efficiently implementing priority queues.</P>
+            <h2>Graph:</h2><p>Description: A collection of nodes (vertices) connected by edges.
+
+                Example Use: Social networks, route maps, and dependency trees.</p>
+        </div>
+
+        <script src="script1.js"></script>
+
+    </body>
+</html>

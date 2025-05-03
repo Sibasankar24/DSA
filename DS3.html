@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Structures</title>
+        <link rel="stylesheet" href="styles1.css">
+    </head>
+    <body>
+        <header><h1>Data Structures and Their Uses</h1></header>
+        <h1>Welcome to Hash-Based Data Structures</h1>
+        <p>Click the link below to go to Linear Data Structures:</p>
+        <a href="ion.html" class="button">Linear Data Structures</a>
+        <p>Click the link below to go to Hash-Based Data Structures:</p>
+        <a href="DS2.html" class="button">Non-Linear Data Structures</a>
+    </body>
+    <main>
+        <div class="data-structure">
+            <h2>Hash Table:</h2>
+            <p>Description: A data structure that maps keys to values using a hash function.
+
+            Example Use: Fast data retrieval, such as in caching mechanisms.</p>
+            <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+
+            <h2>Hash Set:</h2>
+            <p>Description: A collection of unique elements that uses a hash function to organize the data.
+
+                Example Use: Efficient membership testing and deduplication.</p>
+                <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+
+        </div>
+        <div class="data-structure">
+            <h2>Other data Structure</h2>
+            <h2>Trie (Prefix Tree):</h2>
+            <p>Description: A tree-like data structure for storing strings, where common prefixes are shared among nodes.
+
+                Example Use: Autocomplete systems and dictionary implementations.</p>
+                <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+            <h2>Matrix:</h2>
+            <p>Description: A 2D array where data is arranged in rows and columns.
+
+                Example Use: Used in mathematical computations, graphics, and machine learning.</p>
+                <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+            <h2>Bloom Filter:</h2>
+            <p>Description: A probabilistic data structure that determines membership of an element with space efficiency.
+
+                Example Use: Quickly checking if an element might exist in a dataset.</p>
+                <label for="array-type">Choose Array Type:</label>
+            <select id="array-type" onchange="showArrayExample()">
+                <option value="basic">Basic Array</option>
+                <option value="2d">2D Array</option>
+                <option value="dynamic">Dynamic Array</option>
+            </select>
+            <button onclick="showExample('array')">Show Example</button>
+            <pre id="array-example" class="example"></pre>
+        </div>
+        <script src="script1.js"></script>
+    </main>
+</html>
